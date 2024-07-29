@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* General */
+html{
+	font-family: "Montserrat", sans-serif;
+	margin:0;
+	padding:0;
+}
+
+.comandament {
+	  width:45%;
+	  margin-left:3%;
+	  display:flex;
+  	flex-direction: column;
+  	justify-content: space-evenly;
+    height:100%;
+    min-width: 400px;
+}
+
+.contingut form{
+	  display:flex;
+  	flex-direction: row;
+  	align-items:center;
+  	background-color:lightcoral;
+  	justify-content: center;
+  	padding:10px;
+    gap:10px;
+}
+
+#comandaments{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	margin-left:3%;
+	margin-right:3%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  #comandaments{
+    flex-direction:column;
+    margin-left:3%;
+    margin-right:10%;
+  }
+
+  .comandament{
+    width: 100%;
+  }
+}
+
+.vora {
+	margin: 20px auto;
+  width:50%;
+	height:40px;
+	border:3px dashed darkblue;
+	text-align:center;
+	border-radius:20px;
+  height: 3rem;
+  line-height: 3rem;
+  font-size:2rem;
+}
+
+
+h2{
+	background-color:lightblue;
+	border-radius:10px;
+	padding-left:10px;
+}
+
+h1{
+	text-align: center;
+  background-color: #000;
+  color: #FFF;
+  padding:5px;
+}
+
+input[type=text],input[type=password],input[type=date], select {
+  width: 35%;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type=checkbox]{
+  width:25px;
+  height:25px;
+}
+
+/*Calendari*/
+
+.calendari {
+  margin: 0px auto;
+  width: 100px;
+  border: 1px solid #D5D5D5;
+  text-align: center;
+  box-shadow: 0px 10px 25px #ABABAB;
+  
+  .fons {
+    background: #6AB6E0;
+    color: white;
+  }
+  
+  .mes {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 2px;
+    height:20px;
+  }
+  
+  .dia {
+    font-size: 15px;
+    padding-top: 2px;
+    background: #FFF;
+    height:20px;
+    font-style:italic;
+  }
+  
+  .num_dia {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    background: #FFF;
+    height:20px;
+  }
+}
+
+/* Teclat */
+#div-tec{
+	width:100%;
+	margin-right:3%;
+}
+
+/* Botons */
+
+button {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 150px;
+}
+
+button:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:main,
+button:focus {
+  user-select: auto;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+button:disabled {
+  cursor: auto;
+}
+
+button:active {
+  border-width: 4px 0 0;
+  background: none;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Control Panel</title>
+	<link rel="stylesheet" type="text/css" href="css/ControlPanel.css">
+	<script type="text/javascript" src="js/ControlPanel.js"></script>
+</head>
+<body>
+	<div id="contenidor">
+		<h1>EAC4: Tauler de control</h1>
+		<div id="comandaments">
+		
+			<div class="comandament">
+				<h2> 1. Hexadecimal a Decimal </h2>
+				<div class="contingut">
+					<form id="formulari">
+						<input type="text" id="conv-input" required pattern="[A-Fa-f0-9]{1,5}">
+						<button>Convertir</button>
+						<div class="vora" id="div-hex"></div>
+					</form>
+				</div>
+			</div>
+
+			
+			<div class="comandament">
+				<h2> 2. Binari a Decimal </h2>
+				<div class="contingut">
+					<form>
+						<input type="checkbox" id="conv-input-1">
+						<input type="checkbox" id="conv-input-2">
+						<input type="checkbox" id="conv-input-3">
+						<input type="checkbox" id="conv-input-4" checked>
+						<button id="bot-bin">Convertir</button>
+						<div class="vora" id="div-bin"></div>
+					</form>
+				</div>
+			</div>
+
+			
+			<div class="comandament">
+				<h2> 3. Data </h2>
+				<div class="contingut">
+					<form>
+						<input type="date" id="data-input">
+						<div class="calendari">
+						  <div class="mes fons" id="mes">Novembre</div>
+						  <div class="dia" id="dia-set">Dilluns</div>
+						  <div class="num_dia" id="dia-mes">25</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			
+			<div class="comandament">
+				<h2> 4. Color </h2>
+				<div class="contingut">
+					<form>
+						<input type="color" id="color-input">
+						<div class="vora" id="div-color"></div>
+					</form>
+				</div>
+			</div>
+
+			
+			<div class="comandament">
+				<h2> 5. Contrasenya </h2>
+				<div class="contingut">
+					<form>
+						<input type="password" id="pass-input">
+						<button id="bot-pass">Comprova</button>
+						<div class="vora" id="div-pass"></div>
+					</form>
+				</div>
+			</div>
+
+			
+			<div class="comandament">
+				<h2> 6. Rang </h2>
+				<div class="contingut">
+					<form>
+						<input type="range" id="rang-input" min="0" max="80" value="0" step="2">
+						<div class="vora" id="div-rang"></div>
+					</form>
+				</div>
+			</div>
+
+			
+			<div class="comandament">
+				<h2> 7. Teclat </h2>
+				<div class="contingut">
+					<form>
+						<div class="vora" id="div-tec"></div>
+					</form>
+				</div>
+			</div>
+
+			<div class="comandament">
+				<h2> 8. Botons ratolí </h2>
+				<div class="contingut">
+					<form>
+						<div class="vora" id="div-rat"></div>
+					</form>
+				</div>
+			</div>
+
+			<div class="comandament">
+				<h2> 9. Dins i fora </h2>
+				<div class="contingut">
+					<form>
+						<div class="vora dins-fora"></div>
+						<div class="vora dins-fora"></div>
+						<div class="vora dins-fora"></div>
+						<div class="vora dins-fora"></div>
+						<div class="vora dins-fora"></div>
+					</form>
+				</div>
+			</div>
+
+		<div class="comandament">
+				<h2> 10. Selecció </h2>
+				<div class="contingut">
+					<form>
+						<select id="seleccio">
+							<option value="o-1">Primera</option>
+							<option value="o-2">Segona</option>
+							<option value="o-3" selected>Tercera</option>
+							<option value="o-4">Quarta</option>
+							<option value="o-5">Cinquena</option>
+							<option value="o-6">Sisena</option>
+						</select>
+						<div class="vora" id="div-sel-id"></div>
+						<div class="vora" id="div-sel-text"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
